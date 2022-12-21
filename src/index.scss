@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #0a3a72;
+  position: relative;
+}
+
+* {
+  font-family: 'Inter', system-ui !important;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  width: 900px;
+  margin: 350px auto;
+  background-color: rgb(44, 72, 197);
+  padding: 30px;
+  box-shadow: 0 10px 20px rgb(247, 227, 53);
+  border-radius: 4px;
+}
+
+.block {
+  input {
+    border: 2px solid rgba(31, 8, 117, 0.1);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 25px 25px;
+    letter-spacing: 1.3px;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
+.currencies {
+  display: flex;
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+
+  li {
+    display: inline-flex;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    justify-content: center;
+    flex: 1;
+
+    &:hover {
+      background-color: rgba(27, 14, 51, 0.03);
+    }
+
+    &:active {
+      background-color: rgba(42, 6, 88, 0.05);
+    }
+
+    &.active {
+      background-color: #e2e624;
+      color: rgb(3, 0, 0);
+    }
+
+    &:last-of-type {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 50px;
+      border-right: 0;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.choosePage {
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.choosePage:hover {
+  color: rgb(192, 240, 183);
+  
+}
