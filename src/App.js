@@ -4,7 +4,7 @@ import './index.scss';
 
 function App() {
   //Перший блок: ЩО конвертуємо
-const [fromCurrency, setFromCurrency] = React.useState("RUB");
+const [fromCurrency, setFromCurrency] = React.useState("UAH");
   //Другий блок: У що конвертуємо
 const [toCurrency, setToCurrency] = React.useState("USD");
 
